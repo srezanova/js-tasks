@@ -1,5 +1,9 @@
 const names = ['Vitalik', 'Sasha', 'Julya'];
 
-const greets = null;
+function addName(greet) {
+  return 'Hello, ' + greet;
+}
+
+const greets = names.map(addName)
 
 console.log(greets);
